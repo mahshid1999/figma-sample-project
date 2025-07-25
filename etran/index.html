@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>نمونه پروژه فیگما</title>
+    <style>
+      *{
+margin: 0;
+padding: 0;
+      }
+      .row2 {
+        display: flex;
+        padding-left: 20px;
+        margin-top: 20px;
+      }
+
+      .box {
+        width: 110px;
+        height: 120px;
+        background-color: #689211;
+        border-radius: 5px;
+        text-align: center;
+        margin-left: 20px;
+        transition: background-color 0.3s;
+      }
+
+      .box:hover {
+        background-color: #c8f3a4;
+      }
+
+      .box img {
+        margin-top: 20px;
+        color: gray;
+        width: 25px;
+      }
+
+      .box div {
+        line-height: 20px;
+        margin-top: 10px;
+        color: black;
+      }
+      .contact {
+        color: #c8f3a4;
+        margin-left: 20px;
+        text-decoration: none;
+      }
+      .contact:hover {
+        text-decoration: underline;
+      }
+      .my-button {
+     
+        border: none;
+        outline: none;
+        cursor: pointer;
+        transition: transform 0.5s ease;
+      }
+
+      .my-button:hover {
+        transform: translateY(-5px);
+      }
+      .image-container {
+        position: relative;
+        display: inline-block;
+      }
+
+      .btn-on-image {
+        position: absolute;
+        bottom: 20px;
+        left: 55px;
+        background-color: #c8f3a4;
+        color: #484f0c;
+        border: none;
+        padding: 10px 15px;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+
+      .my-links a {
+        text-decoration: none;
+        color: black;
+      }
+
+      .my-links a:hover {
+        color: gray;
+      }
+      .my-linkss a {
+        text-decoration: none;
+        color: gray;
+      }
+
+      .my-linkss a:hover {
+        color: rgb(197, 195, 195);
+      }
+           @media (max-width: 768px) {
+          body {
+            overflow-x: hidden;
+          }
+
+        .row {
+          flex-direction: column;
+        }
+
+        .col-4 {
+          width: 100% !important;
+          position: relative !important;
+          height: auto !important;
+        }
+
+        .col-8 {
+          width: 100% !important;
+          margin-left: 0 !important;
+          padding: 20px !important;
+        }
+
+        .row2 {
+          justify-content: center;
+          padding-left: 0;
+        }
+
+        .box {
+          margin-left: 10px;
+          margin-right: 10px;
+        }
+
+        .row3 {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
+          margin-left: 0;
+        }
+
+        .row3 .contact {
+          margin: 5px 10px;
+        }
+
+        #section1 img,
+        #section2 img,
+        #section3 img,
+        #section4 img {
+          width: 100% !important;
+          height: auto;
+          margin-left: 0 !important;
+        }
+
+        #section1 div,
+        #section2 div,
+        #section3 div,
+        #section4 div {
+          margin: 20px auto !important;
+        }
+
+        #section3 > div {
+          flex-direction: column;
+          align-items: center;
+        }
+
+        #section3 > div > div {
+          width: 90% !important;
+          margin-bottom: 20px;
+        }
+
+        #section4 > div {
+          flex-direction: column;
+          align-items: center;
+        }
+
+        #section4 .my-button {
+          width: 140px !important;
+          height: 140px !important;
+          margin: 10px !important;
+        }
+      }
+    </style>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
+      crossorigin="anonymous"
+    />
+  </head>
+
+  <body style="height: 100vh;display: block;">
+    <div class="row">
+      <!--سبز-->
+      <div
+        class="col-4"
+        style="
+          background-color: #484f0c;
+          height: 100vh;
+          height: 100vh;
+          position: fixed;
+          left: 0;
+          top: 0;
+          padding: 20px;
+          box-sizing: border-box;
+        "
+      >
+        <div class="row1 d-flex">
+          <div class="col-6" style="margin: 10px">
+            <img
+              src="./lib/img/3375391-200 (1).png"
+              style="color: white; padding: 20px; width: 60px"
+              alt=""
+            /><span style="color: white">Etran</span>
+          </div>
+          <div class="col-6">
+            <button
+              style="
+                background-color: #c8f3a4;
+                color: #484f0c;
+                width: 100px;
+                margin: 20px;
+                border-radius: 5px;
+                border: none;
+                font-size: 10px;
+                padding: 10px;
+              "
+            >
+              Get started
+            </button>
+          </div>
+        </div>
+        <div
+          class="col-12"
+          style="
+            text-align: left;
+            color: white;
+            font-size: 50px;
+            padding-left: 40px;
+            margin-top: 20px;
+            line-height: 50px;
+          "
+        >
+          Money Transfers Made <span style="color: #c8f3a4">Simple</span>
+        </div>
+        <div
+          class="col-12"
+          style="
+            text-align: left;
+            margin-top: 30px;
+            padding-left: 40px;
+            font-size: 18px;
+            color: rgb(186, 182, 182);
+          "
+        >
+          No personal credit checks or founder guarantee.
+        </div>
+        <div
+          class="col-12"
+          style="
+            margin-top: 40px;
+            padding-left: 40px;
+            color: #c8f3a4;
+            font-size: 10px;
+            font-weight: bold;
+          "
+        >
+          Our offerings
+        </div>
+        <div class="row2">
+          <div class="box">
+            <img src="./lib/img/lightning-charge.svg" alt="" />
+            <a href="#section2" style="text-decoration: none">
+              <div>Instant Productivity</div>
+            </a>
+          </div>
+          <div class="box">
+            <img src="./lib/img/globe2.svg" alt="" />
+            <a href="#section3" style="text-decoration: none">
+              <div>Expense Management</div>
+            </a>
+          </div>
+          <div class="box">
+            <img src="./lib/img/shield-check.svg" alt="" />
+            <a href="#section4" style="text-decoration: none">
+              <div>Advanced Technology</div>
+            </a>
+          </div>
+        </div>
+
+        <div
+          class="row3"
+          style="margin-top: 40px; font-size: 10px; margin-left: 30px"
+        >
+          <a class="contact" href="">Contact</a>
+          <a class="contact" href="">Social</a>
+          <a class="contact" href="">Address</a>
+          <a class="contact" href="">Legal Terms</a>
+        </div>
+      </div>
+      <!-- آخر سبز -->
+      <!-- قسمت سفید -->
+      <div
+        class="col-8"
+        style="
+          width: 100%;
+          background-color: white;
+
+          margin-left: 500px;
+          flex: 1;
+          height: 100vh;
+          overflow-y: auto;
+          padding: 40px;
+          box-sizing: border-box;
+        "
+      >
+        <!-- section 1 -->
+        <div id="section1" style="text-align: center">
+          <img
+            src="./lib/img/Screenshot 2025-07-08 223259.png"
+            alt=""
+            style="width: 900px; margin-left: 40px"
+          />
+
+          <div style="font-size: 20px; max-width: 300px; margin: 60px 300px">
+            We escalate transfer efficiency and productivity
+          </div>
+        </div>
+
+        <!-- section 2 -->
+        <div id="section2" style="margin-top: 200px; text-align: center">
+          <div style="font-size: 40px; color: #484f0c">
+            Get More Done In A Week
+          </div>
+          <div
+            style="
+              font-size: 12px;
+              max-width: 400px;
+              margin: 0 auto;
+              margin-top: 10px;
+            "
+          >
+            Maximize your productivity with smarter tools designed to streamline
+            your workflow to automate tasks, stay organized
+          </div>
+          <img
+            src="./lib/img/Screenshot 2025-07-12 021649.png"
+            alt=""
+            style="width: 900px; padding: 40px"
+          />
+        </div>
+        <!-- section3 -->
+        <div id="section3" style="margin-top: 100px; text-align: center">
+          <div style="font-size: 40px; color: #484f0c">
+            The Most Reliable App
+          </div>
+
+          <div
+            style="
+              display: flex;
+              justify-content: center;
+              gap: 10px;
+              max-width: 900px;
+              margin-left: 50px;
+              margin-top: 20px;
+            "
+          >
+            <div>
+              <img
+                src="./lib/img/Screenshot 2025-07-12 022247.png"
+                alt=""
+                style="width: 450px; height: auto"
+              />
+              <div
+                style="
+                  text-align: left;
+                  font-size: 13px;
+                  color: #484f0c;
+
+                  margin-top: 10px;
+                "
+              >
+                Scale Your Team, Not Your Card Expenses
+              </div>
+              <div
+                class="col-11"
+                style="text-align: left; font-size: 13px; margin-left: 10px"
+              >
+                Issue virtual and physical cards at no additional cost to
+                support teams of any size.
+              </div>
+            </div>
+            <div>
+              <img
+                src="./lib/img/Screenshot 2025-07-12 022258.png"
+                alt=""
+                style="width: 450px; height: auto"
+              />
+              <div
+                style="
+                  text-align: left;
+                  font-size: 13px;
+                  color: #484f0c;
+                  margin-left: 10px;
+                  margin-top: 10px;
+                "
+              >
+                Effortless Paper Tracking, Mobile Convenience
+              </div>
+              <div
+                class="col-11"
+                style="text-align: left; font-size: 13px; margin-left: 10px"
+              >
+                Get precise control—at scale—with the ability to lock any card
+                and restrict any type of spend.
+              </div>
+            </div>
+          </div>
+        </div>
+        <div style="text-align: center">
+          <img
+            src="./lib/img/Screenshot 2025-07-12 024757.png"
+            alt=""
+            style="width: 900px; margin-left: 50px; margin-top: 200px"
+          />
+        </div>
+
+        <!-- section 4 -->
+        <div id="section4" style="margin-top: 100px; text-align: center">
+          <div style="font-size: 40px; color: #484f0c">
+            First Class Software
+          </div>
+          <div style="font-size: 12px; max-width: 400px; margin: 0 auto">
+            Get real-time insights, seamless transactions, and advanced tools to
+            manage your wealth effortlessly.
+          </div>
+          <div style="display: flex; margin-left: 40px">
+            <div>
+              <button
+                class="my-button"
+                style="
+                  width: 180px;
+                  height: 180px;
+                  margin: 20px;
+                  border-radius: 15px;
+                  background-color: #484f0c;
+                  border: none;
+                "
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  style="color: #c8f3a4"
+                  width="60"
+                  height="60"
+                  fill="currentColor"
+                  class="bi bi-wallet2"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M12.136.326A1.5 1.5 0 0 1 14 1.78V3h.5A1.5 1.5 0 0 1 16 4.5v9a1.5 1.5 0 0 1-1.5 1.5h-13A1.5 1.5 0 0 1 0 13.5v-9a1.5 1.5 0 0 1 1.432-1.499zM5.562 3H13V1.78a.5.5 0 0 0-.621-.484zM1.5 4a.5.5 0 0 0-.5.5v9a.5.5 0 0 0 .5.5h13a.5.5 0 0 0 .5-.5v-9a.5.5 0 0 0-.5-.5z"
+                  />
+                </svg>
+              </button>
+              <div style="font-size: 13px">Safe Storage</div>
+            </div>
+            <div>
+              <button
+                class="my-button"
+                style="
+                  width: 180px;
+                  height: 180px;
+                  margin: 20px;
+                  border-radius: 15px;
+                  background-color: #484f0c;
+                  border: none;
+                "
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  style="color: #c8f3a4"
+                  width="60"
+                  height="60"
+                  fill="currentColor"
+                  class="bi bi-fingerprint"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M8.06 6.5a.5.5 0 0 1 .5.5v.776a11.5 11.5 0 0 1-.552 3.519l-1.331 4.14a.5.5 0 0 1-.952-.305l1.33-4.141a10.5 10.5 0 0 0 .504-3.213V7a.5.5 0 0 1 .5-.5Z"
+                  />
+                  <path
+                    d="M6.06 7a2 2 0 1 1 4 0 .5.5 0 1 1-1 0 1 1 0 1 0-2 0v.332q0 .613-.066 1.221A.5.5 0 0 1 6 8.447q.06-.555.06-1.115zm3.509 1a.5.5 0 0 1 .487.513 11.5 11.5 0 0 1-.587 3.339l-1.266 3.8a.5.5 0 0 1-.949-.317l1.267-3.8a10.5 10.5 0 0 0 .535-3.048A.5.5 0 0 1 9.569 8m-3.356 2.115a.5.5 0 0 1 .33.626L5.24 14.939a.5.5 0 1 1-.955-.296l1.303-4.199a.5.5 0 0 1 .625-.329"
+                  />
+                  <path
+                    d="M4.759 5.833A3.501 3.501 0 0 1 11.559 7a.5.5 0 0 1-1 0 2.5 2.5 0 0 0-4.857-.833.5.5 0 1 1-.943-.334m.3 1.67a.5.5 0 0 1 .449.546 10.7 10.7 0 0 1-.4 2.031l-1.222 4.072a.5.5 0 1 1-.958-.287L4.15 9.793a9.7 9.7 0 0 0 .363-1.842.5.5 0 0 1 .546-.449Zm6 .647a.5.5 0 0 1 .5.5c0 1.28-.213 2.552-.632 3.762l-1.09 3.145a.5.5 0 0 1-.944-.327l1.089-3.145c.382-1.105.578-2.266.578-3.435a.5.5 0 0 1 .5-.5Z"
+                  />
+                  <path
+                    d="M3.902 4.222a5 5 0 0 1 5.202-2.113.5.5 0 0 1-.208.979 4 4 0 0 0-4.163 1.69.5.5 0 0 1-.831-.556m6.72-.955a.5.5 0 0 1 .705-.052A4.99 4.99 0 0 1 13.059 7v1.5a.5.5 0 1 1-1 0V7a3.99 3.99 0 0 0-1.386-3.028.5.5 0 0 1-.051-.705M3.68 5.842a.5.5 0 0 1 .422.568q-.044.289-.044.59c0 .71-.1 1.417-.298 2.1l-1.14 3.923a.5.5 0 1 1-.96-.279L2.8 8.821A6.5 6.5 0 0 0 3.058 7q0-.375.054-.736a.5.5 0 0 1 .568-.422m8.882 3.66a.5.5 0 0 1 .456.54c-.084 1-.298 1.986-.64 2.934l-.744 2.068a.5.5 0 0 1-.941-.338l.745-2.07a10.5 10.5 0 0 0 .584-2.678.5.5 0 0 1 .54-.456"
+                  />
+                  <path
+                    d="M4.81 1.37A6.5 6.5 0 0 1 14.56 7a.5.5 0 1 1-1 0 5.5 5.5 0 0 0-8.25-4.765.5.5 0 0 1-.5-.865m-.89 1.257a.5.5 0 0 1 .04.706A5.48 5.48 0 0 0 2.56 7a.5.5 0 0 1-1 0c0-1.664.626-3.184 1.655-4.333a.5.5 0 0 1 .706-.04ZM1.915 8.02a.5.5 0 0 1 .346.616l-.779 2.767a.5.5 0 1 1-.962-.27l.778-2.767a.5.5 0 0 1 .617-.346m12.15.481a.5.5 0 0 1 .49.51c-.03 1.499-.161 3.025-.727 4.533l-.07.187a.5.5 0 0 1-.936-.351l.07-.187c.506-1.35.634-2.74.663-4.202a.5.5 0 0 1 .51-.49"
+                  />
+                </svg>
+              </button>
+              <div style="font-size: 13px">Secure</div>
+            </div>
+            <div>
+              <button
+                class="my-button"
+                style="
+                  width: 180px;
+                  height: 180px;
+                  margin: 20px;
+                  border-radius: 15px;
+                  background-color: #484f0c;
+                  border: none;
+                "
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  style="color: #c8f3a4"
+                  width="60"
+                  height="60"
+                  fill="currentColor"
+                  class="bi bi-graph-up-arrow"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M0 0h1v15h15v1H0zm10 3.5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-1 0V4.9l-3.613 4.417a.5.5 0 0 1-.74.037L7.06 6.767l-3.656 5.027a.5.5 0 0 1-.808-.588l4-5.5a.5.5 0 0 1 .758-.06l2.609 2.61L13.445 4H10.5a.5.5 0 0 1-.5-.5"
+                  />
+                </svg>
+              </button>
+              <div style="font-size: 13px">Earn Interest</div>
+            </div>
+            <div>
+              <button
+                class="my-button"
+                style="
+                  width: 180px;
+                  height: 180px;
+                  margin: 20px;
+                  border-radius: 15px;
+                  background-color: #484f0c;
+                  border: none;
+                "
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  style="color: #c8f3a4"
+                  width="60"
+                  height="60"
+                  fill="currentColor"
+                  class="bi bi-people-fill"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M7 14s-1 0-1-1 1-4 5-4 5 3 5 4-1 1-1 1zm4-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6m-5.784 6A2.24 2.24 0 0 1 5 13c0-1.355.68-2.75 1.936-3.72A6.3 6.3 0 0 0 5 9c-4 0-5 3-5 4s1 1 1 1zM4.5 8a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5"
+                  />
+                </svg>
+              </button>
+              <div style="font-size: 13px">Family Plans</div>
+            </div>
+          </div>
+        </div>
+        <!-- section nist dg -->
+        <div class="image-container">
+          <img
+            style="width: 900px; margin-left: 40px; margin-top: 150px"
+            src="./lib/img/Screenshot 2025-07-12 152730.png"
+            alt=""
+          />
+          <button
+            style="
+              background-color: #c8f3a4;
+              color: #484f0c;
+              width: 100px;
+              margin: 20px;
+              border-radius: 5px;
+              border: none;
+              font-size: 10px;
+            "
+            class="btn-on-image"
+          >
+            Get started
+          </button>
+        </div>
+        <!-- طوسی -->
+        <div
+          style="
+            background-color: rgb(230, 226, 226);
+            height: 500px;
+width: 100%;
+            margin-top: 100px;
+            display: flex;
+            justify-content: space-between;
+          padding: 20px;
+          "
+        >
+          <div>
+            <img
+              src="./lib/img/931904-200.png"
+              style="width: 50px; margin-left: 20px"
+              alt=""
+            />
+            <div
+              style="
+                margin-top: 200px;
+                font-size: 50px;
+                font-weight: bold;
+                color: black;
+              "
+            >
+              Etran
+            </div>
+          </div>
+
+          <div
+            style="
+              color: gray;
+              font-size: 13px;
+              margin-right: 120px;
+              margin-top: 10px;
+            "
+          >
+            Contact
+            <br />
+            <div class="my-links" style="margin-top: 10px">
+              <a href="">hello@figma.com</a><br />
+              <a href="">Instagram</a><br />
+              <a href="">X</a><br />
+              <a href="">LinkedIn</a><br />
+            </div>
+            <div class="my-linkss" style="margin-top: 150px; color: gray">
+              <a href="">Terms & Conditions</a> <br />
+              <a href="">Privacy</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- آخر طوسی -->
+      </div>
+      <!-- آخر سفید -->
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
